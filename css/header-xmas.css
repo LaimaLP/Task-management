@@ -1,0 +1,9 @@
+.main-header{
+    background-color: rgb(252, 9, 13);
+    justify-content: space-between;
+    padding:20px 40px;
+    display: flex;
+}
+.main-header> .logo{
+
+}

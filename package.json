@@ -4,10 +4,13 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "dead-server --host=localhost --port=4608",
+    "dev": "dead-server --host=localhost --port=0008",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "Laima Pamaiva",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "dead-server": "^1.0.9"
+  }
 }

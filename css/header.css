@@ -1,0 +1,17 @@
+.main-header{
+    background-color: rgb(247, 255, 9);
+    justify-content: space-between;
+    padding:20px 40px;
+    display: flex;
+    box-shadow: 0 4px 8px gainsboro;
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+.main-header> .logo{
+
+}
+.main-header> .btn{
+
+}
