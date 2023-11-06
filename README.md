@@ -18,7 +18,8 @@ This project is for educational porpuses only. Pull request are welcome, but pri
 
 Site published at: https://laimalp.github.io/Task-management/
 
-Design: [Real Estate] (https://dribbble.com/shots/10172325-Real-Estate-concept/attachments/2114689?mode=media)
+Design: [First] https://dribbble.com/shots/17246001/attachments/12352583?mode=media
+[Second] https://dribbble.com/shots/14552329--Exploration-Task-Management-Dashboard/attachments/6241009?mode=media
 
 ## 🎯 Project features/goals
 
