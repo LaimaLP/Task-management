@@ -16,7 +16,7 @@ _website design project_
 
 This project is for educational porpuses only. Pull request are welcome, but priority for project authors! Thank you for your cooperation!
 
-Site published at: https://laimalp.github.io/46-GRUPE-REAL-ESTATE/
+Site published at: https://laimalp.github.io/Task-management/
 
 Design: [Real Estate] (https://dribbble.com/shots/10172325-Real-Estate-concept/attachments/2114689?mode=media)
 
@@ -24,7 +24,7 @@ Design: [Real Estate] (https://dribbble.com/shots/10172325-Real-Estate-concept/a
 
 -   Github pages
 -   responsive design
--
+-   repetative content generation with JS
 
 ## 🧰 Getting Started
 
@@ -48,7 +48,7 @@ Would like to run this project locally? Open terminal and follow these steps:
 
 1. Clone the repo
     ```sh
-    git clone https://laimalp.github.io/46-GRUPE-REAL-ESTATE/
+    git clone https://laimalp.github.io/Task-management/
     ```
 2. Install NPM packages
     ```sh

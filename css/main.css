@@ -45,4 +45,11 @@ body {
 }
 
 @media print {
+    .main-content{
+       font-size: 90px;
+      background-color: blueviole;
+       display: none;
+       display: grid;
+    }
+    
 }
