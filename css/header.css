@@ -1,8 +1,9 @@
 .main-header{
-    background-color: rgb(247, 255, 9);
+    display: flex;
     justify-content: space-between;
     padding:20px 40px;
-    display: flex;
+    background-color: rgb(223, 224, 202); 
+
     box-shadow: 0 4px 8px gainsboro;
     position: sticky;
     top: 0;
