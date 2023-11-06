@@ -45,11 +45,13 @@ body {
 }
 
 @media print {
+    .main-header{
+      background-color:rgb(43, 226, 83);
+
+    }
     .main-content{
-       font-size: 90px;
-      background-color: blueviole;
-       display: none;
-       display: grid;
+     display: grid;
+       grid-template-columns: 1lr 1lr;
     }
     
 }
