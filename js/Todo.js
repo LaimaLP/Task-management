@@ -45,7 +45,7 @@ export class Todo {
     //   console.log(this.columnsDOM)
   }
 
-  taskCardHTML(){
+  taskCardHTML(taskID, task){
     let tagsHTML = "";
 
     for (const tag of task.tags) {

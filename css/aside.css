@@ -48,9 +48,8 @@
   color: black;
 }
 .aside-content {
-  max-height: calc(100vh-8rem);
-  height: 20rem;
-  overflow: auto;
+  max-height: calc(100vh - 8rem);
+   overflow: auto;
 }
 .aside .aside-title{
     font-size: 2rem;
