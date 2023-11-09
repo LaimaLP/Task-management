@@ -45,24 +45,14 @@ export class Todo {
     //   console.log(this.columnsDOM)
   }
 
-  taskCardHTML = ""
-
-
-  addTask(task) {
-    this.tasks.push({
-        ...task,
-        isDeleted: false,
-       
-    })
-    this.tasks.push(task);
-const taskID = ++this.lastUsedtaskId
+  taskCardHTML(){
     let tagsHTML = "";
-    
+
     for (const tag of task.tags) {
       tagsHTML += `<div class="tag" style ="color: ${tag.color};"> ${tag.text} </div>`;
     }
 
-    const HTML = `
+    return `
        <li id="task_${taskID}" class="task-card">
             <div class="task-actions">
                     <button class="fa fa-trash"></button>
@@ -74,14 +64,27 @@ const taskID = ++this.lastUsedtaskId
             <div class="task-deadline">${task.deadline}</div>
             
        </li>`;
-    
-    this.columnsDOM[task.columnIndex].insertAdjacentHTML('beforeend', HTML) 
+  }
+
+
+  addTask(task) {
+     const taskID = ++this.lastUsedtaskId;
+     this.tasks.push({
+        ...task,
+        isDeleted: false,
+    });
+    this.tasks.push(task);
+   
+
+    this.columnsDOM[task.columnIndex].insertAdjacentHTML('beforeend', this.taskCardHTML(taskID, task)) 
 
 
     const taskDOM = document.getElementById(`task_${taskID}`);
     const deleteButtonDOM = taskDOM.querySelector('.fa-trash');
-    //    console.log(deleteButtonDOM);
+ 
+      deleteButtonDOM.addEventListener("click", () => {
         this.tasks[taskID-1].isDeleted =true;
-       deleteButtonDOM.addEventListener("click", () => taskDOM.remove());
-  }
+        taskDOM.remove();
+      })
+}
 }
