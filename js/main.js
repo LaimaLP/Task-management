@@ -1,6 +1,8 @@
 import { Todo } from "./Todo.js";
 
-localStorage.setItem('labas', 'rytas')
+const kanban = new Todo("#kanban", ["Backlog", "Todo", "In progress", "Done"]);
+
+
 const addTaskBtnDOM = document.getElementById("add_task");
 
 const asideDOM = document.getElementById("aside");
@@ -40,6 +42,7 @@ const formTagsDOM = document.getElementById("tags");
 if (formDOM) {
   formDOM.addEventListener("submit", (event) => {
     event.preventDefault();
+
     kanban.addTask({
     columnIndex: 0,
     title: formTitleDOM.value,
@@ -59,9 +62,8 @@ formTagsDOM.value = '';
 })
 }
 
-const kanban = new Todo("#kanban", ["Backlog", "Todo", "In progress", "Done"]);
 
 
-console.log(kanban);
+
 
 
