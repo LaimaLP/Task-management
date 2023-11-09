@@ -44,6 +44,10 @@ export class Todo {
     this.columnsDOM = this.DOM.querySelectorAll(".task-list");
     //   console.log(this.columnsDOM)
   }
+
+  taskCardHTML = ""
+
+
   addTask(task) {
     this.tasks.push({
         ...task,
@@ -53,6 +57,7 @@ export class Todo {
     this.tasks.push(task);
 const taskID = ++this.lastUsedtaskId
     let tagsHTML = "";
+    
     for (const tag of task.tags) {
       tagsHTML += `<div class="tag" style ="color: ${tag.color};"> ${tag.text} </div>`;
     }

@@ -1,4 +1,51 @@
 import { Todo } from "./Todo.js";
+const addTaskBtnDOM = document.getElementById("add_task"); 
+
+const asideDOM = document.getElementById("aside")
+const asideBackgroundDOM = asideDOM.querySelector(".aside-bg");
+const asideCloceBtnDOM = asideDOM.querySelector('.aside-header button');
+
+if(addTaskBtnDOM && asideDOM){
+    addTaskBtnDOM.addEventListener("click", ()=>{
+        asideDOM.classList.add("show");
+    })
+
+    asideBackgroundDOM.addEventListener("click", ()=>{
+        asideDOM.classList.remove("show");
+    })
+
+    asideCloceBtnDOM.addEventListener("click", ()=>{
+        asideDOM.classList.remove("show");
+    })
+
+    window.addEventListener('keyup', (event) => {
+        if (event.key === 'Escape') {
+            asideDOM.classList.remove('show');
+        }
+        if (event.key === '+') {
+            asideDOM.classList.add('show');
+        }
+
+    })
+}
+
+
+const formDOM = document.getElementById("task_form")
+const formTitleDOM = document.getElementById('title');
+const formDescDOM = document.getElementById('desc');
+const formDeadlineDOM = document.getElementById('deadline');
+const formTagsDOM = document.getElementById('tags');
+
+if(formDOM){
+    formDOM.addEventListener('submit', (event)=>{
+        event.preventDefault();
+        console.log("dscsd")
+    })
+}
+console.log(formTitleDOM.value)
+console.log(formDescDOM.value)
+console.log(formDeadlineDOM.value)
+console.log(formTagsDOM.value)
 
 const kanban = new Todo('#kanban', ['Backlog', 'Todo', 'In progress', 'Done']);
 
