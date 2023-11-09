@@ -1,9 +1,11 @@
 import { Todo } from "./Todo.js";
+
 const addTaskBtnDOM = document.getElementById("add_task"); 
+
 
 const asideDOM = document.getElementById("aside")
 const asideBackgroundDOM = asideDOM.querySelector(".aside-bg");
-const asideCloceBtnDOM = asideDOM.querySelector('.aside-header button');
+const asideCloseBtnDOM = asideDOM.querySelector('.aside-header button');
 
 if(addTaskBtnDOM && asideDOM){
     addTaskBtnDOM.addEventListener("click", ()=>{
@@ -14,7 +16,7 @@ if(addTaskBtnDOM && asideDOM){
         asideDOM.classList.remove("show");
     })
 
-    asideCloceBtnDOM.addEventListener("click", ()=>{
+    asideCloseBtnDOM.addEventListener("click", ()=>{
         asideDOM.classList.remove("show");
     })
 
