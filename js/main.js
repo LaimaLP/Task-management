@@ -1,5 +1,6 @@
 import { Todo } from "./Todo.js";
 
+localStorage.setItem('labas', 'rytas')
 const addTaskBtnDOM = document.getElementById("add_task");
 
 const asideDOM = document.getElementById("aside");
