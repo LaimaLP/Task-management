@@ -94,11 +94,11 @@ export class Todo {
     console.log(localData)
     const data = JSON.parse(localData);
     console.log(data)
-
+    if(data){
     for(const task of data){
       this.addTask(task)
       // this.renderTask(task)
-
+    }
     }
 
   }
