@@ -1,6 +1,6 @@
 import { Todo } from "./Todo.js";
 
-const kanban = new Todo("#kanban", ["Backlog", "Todo", "In progress", "Done"]);
+const kanban = new Todo("#kanban", ["Todo"]);
 
 
 const addTaskBtnDOM = document.getElementById("add_task");

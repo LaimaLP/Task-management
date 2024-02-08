@@ -1,20 +1,22 @@
-.main-header{
+.main-header {
     display: flex;
-    justify-content: space-between;
-    padding:20px 40px;
-    background-color: rgb(241, 245, 245); 
-
-    box-shadow: 0 4px 8px gainsboro;
+    justify-content: center;
+    padding: 20px 40px;
+    background-color: rgba(233, 229, 238, 0.9);
+    gap: 150px;
+    box-shadow: 0 4px 8px rgb(220, 220, 220);
     position: sticky;
     top: 0;
     left: 0;
     right: 0;
     z-index: 1;
 }
-.main-header> .logo{
-font-size: 2rem;
-line-height: 1em;
-}
-.main-header> .btn{
 
+.input {
+    border-radius: 10px;
+}
+
+.main-header>.logo {
+    font-size: 2rem;
+    line-height: 1em;
 }

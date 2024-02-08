@@ -41,7 +41,7 @@ export class Todo {
 
     this.DOM.classList.add("todo");
     this.DOM.innerHTML = HTML;
-    this.DOM.style.gridTemplateColumns = `repeat(${this.columns.length}, 1fr)`;
+    // this.DOM.style.gridTemplateColumns = `repeat(${this.columns.length}, 1fr)`;
     this.columnsDOM = this.DOM.querySelectorAll(".task-list");
     //   console.log(this.columnsDOM)
   }
@@ -97,7 +97,6 @@ export class Todo {
     if(data){
     for(const task of data){
       this.addTask(task)
-      // this.renderTask(task)
     }
     }
 
